@@ -13,7 +13,7 @@ An elite-level endurance running coach skill for Claude Code. Specializes in ult
 ## Install
 
 ```bash
-claude install github:yourusername/running-coach
+claude install github:tylerelias/running-coach
 ```
 
 ## Setup
