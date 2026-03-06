@@ -6,9 +6,8 @@
   "plugins": [
     {
       "name": "running-coach",
-      "source": ".",
+      "source": "./",
       "description": "Endurance running coach with Garmin Connect integration. Ultramarathon preparation, periodized training, race execution, and data-driven coaching.",
-      "version": "1.0.0",
       "skills": [
         "./skills/running-coach"
       ]
