@@ -26,10 +26,15 @@ Fetch Garmin data whenever you need to:
 
 ### How to Pull Data
 
-Run the Garmin fetch script from the skill's scripts directory:
+Run the Garmin fetch script located in the `scripts/` directory adjacent to this SKILL.md:
 
 ```bash
-python ~/.claude/skills/running-coach/scripts/garmin_fetch.py <command> [options]
+python scripts/garmin_fetch.py <command> [options]
+```
+
+If the relative path doesn't resolve, locate it with:
+```bash
+find ~/.claude -name garmin_fetch.py -path "*/running-coach/*" 2>/dev/null
 ```
 
 **Commands:**

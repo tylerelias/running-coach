@@ -12,30 +12,38 @@ An elite-level endurance running coach skill for Claude Code. Specializes in ult
 
 ## Install
 
+### Via Claude Code plugin (recommended)
+
+1. Open Claude Code and run `/plugin`
+2. Go to the **Marketplaces** tab
+3. Add this marketplace: `tylerelias/running-coach`
+4. Go to the **Discover** tab and install **running-coach**
+
+Or from the command line:
+
 ```bash
-claude install github:tylerelias/running-coach
+claude plugin marketplace add tylerelias/running-coach
+claude plugin install running-coach@running-coach
 ```
 
-## Setup
+### Setup
 
-### 1. Install Python dependencies
+Install the Python dependency for Garmin Connect access:
 
 ```bash
 pip install garth requests
 ```
 
-### 2. Set Garmin credentials
+Set your Garmin credentials (add to `~/.bashrc` or `~/.zshrc` to persist):
 
 ```bash
 export GARMIN_EMAIL="your@email.com"
 export GARMIN_PASSWORD="your-password"
 ```
 
-Add these to your shell profile (`~/.bashrc`, `~/.zshrc`, etc.) to persist them.
+Tokens are cached at `~/.garmin_tokens/` after first login so credentials aren't needed on every call.
 
-After the first successful connection, tokens are cached at `~/.garmin_tokens/` so credentials aren't needed again until they expire.
-
-### 3. Start using it
+### Start using it
 
 Ask Claude anything about running training. The skill triggers automatically on questions about:
 
